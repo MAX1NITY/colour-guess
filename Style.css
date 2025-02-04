@@ -1,0 +1,137 @@
+body{
+    background-color: white;
+}
+h1{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#colorBox{
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    height: 20vh;
+    margin: 10px;
+    border: 10px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 11px;
+}
+#color-box-prt{
+    display: flex;
+    justify-content: center;
+}
+
+#colors{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 25vh;
+}
+
+.btn{
+    width: 120px;
+    height: 70px;
+    border-radius: 11px;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
+
+#re-btn{
+    text-align: center;
+    margin-top: 10vh;
+    position: relative;
+}
+
+#replay{
+    height: 7vh;
+    width: 80px;
+    font-size: larger;
+    text-align: center;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 10%;
+}
+
+#score{
+text-align: center;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-size: xx-large;
+}
+
+#colorName{
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#timer-cont{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#closeModalBtn{
+    color: white;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    font-weight: bold;
+    border-radius: 10%;
+}
+
+#openModalBtn{
+    color: white;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    font-weight: bold;
+    border-radius: 10%;
+    display: flex;
+    align-items: start;
+}

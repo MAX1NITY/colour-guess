@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Color Guesser</title>
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span id="closeBtn" class="close">&times;</span>
+                <h2>Welcome to GUESS THE COLOR</h2>
+                <p data-testid="gameInstructions">To play the game you have to press the colored button corresponding to the large colored rectangle.</p>
+                <button id="closeModalBtn">Close</button>
+            </div>
+        </div>
+        <div id="timer-cont">Time Left: <span id="timer">30</span> sec</div>
+        <h1>GUESS THE COLOR</h1>
+        <div id="color-box-prt">
+            <div id="colorBox" data-testid="colorBox"></div>
+        </div>
+        <p id="score" data-testid="score">0</p>
+        <p id="colorName" data-testid="gameStatus">-----</p>
+        <div id="colors">
+            <button class="btn" id="0" data-testid="colorOption" onclick="guess()"></button>
+            <button class="btn" id="1" data-testid="colorOption" onclick="guess()"></button>
+            <button class="btn" id="2" data-testid="colorOption" onclick="guess()"></button>
+            <button class="btn" id="3" data-testid="colorOption" onclick="guess()"></button>
+            <button class="btn" id="4" data-testid="colorOption" onclick="guess()"></button>
+            <button class="btn" id="5" data-testid="colorOption" onclick="guess()"></button>
+        </div>
+        <div id="re-btn">
+            <button id="replay" data-testid="newGameButton" onclick="replay()">Replay</button>
+        </div>
+        <button id="openModalBtn"> Help </button>
+        <script src="Script.js"></script>
+    </body>
+</html>
